@@ -1,0 +1,9 @@
+grammar org.xtext.atm.AtmDsl with org.eclipse.xtext.common.Terminals
+
+generate atmDsl "http://www.xtext.org/atm/AtmDsl"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';

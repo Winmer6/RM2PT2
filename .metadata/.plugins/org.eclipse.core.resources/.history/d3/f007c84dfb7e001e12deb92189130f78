@@ -1,0 +1,737 @@
+/**
+ */
+package org.rm2pt.sample.atm.metamodel.atm.impl;
+
+import java.util.Date;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.InternalEObject;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.rm2pt.sample.atm.metamodel.atm.ATM;
+import org.rm2pt.sample.atm.metamodel.atm.AtmPackage;
+import org.rm2pt.sample.atm.metamodel.atm.Bank;
+import org.rm2pt.sample.atm.metamodel.atm.BankCard;
+import org.rm2pt.sample.atm.metamodel.atm.Receipt;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Receipt</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.impl.ReceiptImpl#getTime <em>Time</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.impl.ReceiptImpl#getUserID <em>User ID</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.impl.ReceiptImpl#getCardID <em>Card ID</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.impl.ReceiptImpl#getOperationName <em>Operation Name</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.impl.ReceiptImpl#getBalanceChanged <em>Balance Changed</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.impl.ReceiptImpl#getBalanceRemain <em>Balance Remain</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.impl.ReceiptImpl#getATMid <em>AT Mid</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.impl.ReceiptImpl#getBankName <em>Bank Name</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.impl.ReceiptImpl#getBank <em>Bank</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.impl.ReceiptImpl#getAtm <em>Atm</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.impl.ReceiptImpl#getBankcard <em>Bankcard</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class ReceiptImpl extends MinimalEObjectImpl.Container implements Receipt {
+	/**
+	 * The default value of the '{@link #getTime() <em>Time</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTime()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Date TIME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTime() <em>Time</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTime()
+	 * @generated
+	 * @ordered
+	 */
+	protected Date time = TIME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getUserID() <em>User ID</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUserID()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String USER_ID_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getUserID() <em>User ID</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUserID()
+	 * @generated
+	 * @ordered
+	 */
+	protected String userID = USER_ID_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getCardID() <em>Card ID</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCardID()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String CARD_ID_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getCardID() <em>Card ID</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCardID()
+	 * @generated
+	 * @ordered
+	 */
+	protected String cardID = CARD_ID_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getOperationName() <em>Operation Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getOperationName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String OPERATION_NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getOperationName() <em>Operation Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getOperationName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String operationName = OPERATION_NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getBalanceChanged() <em>Balance Changed</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBalanceChanged()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double BALANCE_CHANGED_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getBalanceChanged() <em>Balance Changed</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBalanceChanged()
+	 * @generated
+	 * @ordered
+	 */
+	protected double balanceChanged = BALANCE_CHANGED_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getBalanceRemain() <em>Balance Remain</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBalanceRemain()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double BALANCE_REMAIN_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getBalanceRemain() <em>Balance Remain</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBalanceRemain()
+	 * @generated
+	 * @ordered
+	 */
+	protected double balanceRemain = BALANCE_REMAIN_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getATMid() <em>AT Mid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getATMid()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String AT_MID_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getATMid() <em>AT Mid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getATMid()
+	 * @generated
+	 * @ordered
+	 */
+	protected String atMid = AT_MID_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getBankName() <em>Bank Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBankName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String BANK_NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getBankName() <em>Bank Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBankName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String bankName = BANK_NAME_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getBank() <em>Bank</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBank()
+	 * @generated
+	 * @ordered
+	 */
+	protected Bank bank;
+
+	/**
+	 * The cached value of the '{@link #getAtm() <em>Atm</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAtm()
+	 * @generated
+	 * @ordered
+	 */
+	protected ATM atm;
+
+	/**
+	 * The cached value of the '{@link #getBankcard() <em>Bankcard</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBankcard()
+	 * @generated
+	 * @ordered
+	 */
+	protected BankCard bankcard;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ReceiptImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return AtmPackage.Literals.RECEIPT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Date getTime() {
+		return time;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTime(Date newTime) {
+		Date oldTime = time;
+		time = newTime;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AtmPackage.RECEIPT__TIME, oldTime, time));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getUserID() {
+		return userID;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setUserID(String newUserID) {
+		String oldUserID = userID;
+		userID = newUserID;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AtmPackage.RECEIPT__USER_ID, oldUserID, userID));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getCardID() {
+		return cardID;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setCardID(String newCardID) {
+		String oldCardID = cardID;
+		cardID = newCardID;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AtmPackage.RECEIPT__CARD_ID, oldCardID, cardID));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getOperationName() {
+		return operationName;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setOperationName(String newOperationName) {
+		String oldOperationName = operationName;
+		operationName = newOperationName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AtmPackage.RECEIPT__OPERATION_NAME, oldOperationName,
+					operationName));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getBalanceChanged() {
+		return balanceChanged;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBalanceChanged(double newBalanceChanged) {
+		double oldBalanceChanged = balanceChanged;
+		balanceChanged = newBalanceChanged;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AtmPackage.RECEIPT__BALANCE_CHANGED,
+					oldBalanceChanged, balanceChanged));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getBalanceRemain() {
+		return balanceRemain;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBalanceRemain(double newBalanceRemain) {
+		double oldBalanceRemain = balanceRemain;
+		balanceRemain = newBalanceRemain;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AtmPackage.RECEIPT__BALANCE_REMAIN, oldBalanceRemain,
+					balanceRemain));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getATMid() {
+		return atMid;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setATMid(String newATMid) {
+		String oldATMid = atMid;
+		atMid = newATMid;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AtmPackage.RECEIPT__AT_MID, oldATMid, atMid));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getBankName() {
+		return bankName;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBankName(String newBankName) {
+		String oldBankName = bankName;
+		bankName = newBankName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AtmPackage.RECEIPT__BANK_NAME, oldBankName,
+					bankName));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Bank getBank() {
+		if (bank != null && bank.eIsProxy()) {
+			InternalEObject oldBank = (InternalEObject) bank;
+			bank = (Bank) eResolveProxy(oldBank);
+			if (bank != oldBank) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AtmPackage.RECEIPT__BANK, oldBank, bank));
+			}
+		}
+		return bank;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Bank basicGetBank() {
+		return bank;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBank(Bank newBank) {
+		Bank oldBank = bank;
+		bank = newBank;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AtmPackage.RECEIPT__BANK, oldBank, bank));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ATM getAtm() {
+		if (atm != null && atm.eIsProxy()) {
+			InternalEObject oldAtm = (InternalEObject) atm;
+			atm = (ATM) eResolveProxy(oldAtm);
+			if (atm != oldAtm) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AtmPackage.RECEIPT__ATM, oldAtm, atm));
+			}
+		}
+		return atm;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ATM basicGetAtm() {
+		return atm;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAtm(ATM newAtm) {
+		ATM oldAtm = atm;
+		atm = newAtm;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AtmPackage.RECEIPT__ATM, oldAtm, atm));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BankCard getBankcard() {
+		if (bankcard != null && bankcard.eIsProxy()) {
+			InternalEObject oldBankcard = (InternalEObject) bankcard;
+			bankcard = (BankCard) eResolveProxy(oldBankcard);
+			if (bankcard != oldBankcard) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AtmPackage.RECEIPT__BANKCARD, oldBankcard,
+							bankcard));
+			}
+		}
+		return bankcard;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BankCard basicGetBankcard() {
+		return bankcard;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBankcard(BankCard newBankcard) {
+		BankCard oldBankcard = bankcard;
+		bankcard = newBankcard;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AtmPackage.RECEIPT__BANKCARD, oldBankcard, bankcard));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case AtmPackage.RECEIPT__TIME:
+			return getTime();
+		case AtmPackage.RECEIPT__USER_ID:
+			return getUserID();
+		case AtmPackage.RECEIPT__CARD_ID:
+			return getCardID();
+		case AtmPackage.RECEIPT__OPERATION_NAME:
+			return getOperationName();
+		case AtmPackage.RECEIPT__BALANCE_CHANGED:
+			return getBalanceChanged();
+		case AtmPackage.RECEIPT__BALANCE_REMAIN:
+			return getBalanceRemain();
+		case AtmPackage.RECEIPT__AT_MID:
+			return getATMid();
+		case AtmPackage.RECEIPT__BANK_NAME:
+			return getBankName();
+		case AtmPackage.RECEIPT__BANK:
+			if (resolve)
+				return getBank();
+			return basicGetBank();
+		case AtmPackage.RECEIPT__ATM:
+			if (resolve)
+				return getAtm();
+			return basicGetAtm();
+		case AtmPackage.RECEIPT__BANKCARD:
+			if (resolve)
+				return getBankcard();
+			return basicGetBankcard();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case AtmPackage.RECEIPT__TIME:
+			setTime((Date) newValue);
+			return;
+		case AtmPackage.RECEIPT__USER_ID:
+			setUserID((String) newValue);
+			return;
+		case AtmPackage.RECEIPT__CARD_ID:
+			setCardID((String) newValue);
+			return;
+		case AtmPackage.RECEIPT__OPERATION_NAME:
+			setOperationName((String) newValue);
+			return;
+		case AtmPackage.RECEIPT__BALANCE_CHANGED:
+			setBalanceChanged((Double) newValue);
+			return;
+		case AtmPackage.RECEIPT__BALANCE_REMAIN:
+			setBalanceRemain((Double) newValue);
+			return;
+		case AtmPackage.RECEIPT__AT_MID:
+			setATMid((String) newValue);
+			return;
+		case AtmPackage.RECEIPT__BANK_NAME:
+			setBankName((String) newValue);
+			return;
+		case AtmPackage.RECEIPT__BANK:
+			setBank((Bank) newValue);
+			return;
+		case AtmPackage.RECEIPT__ATM:
+			setAtm((ATM) newValue);
+			return;
+		case AtmPackage.RECEIPT__BANKCARD:
+			setBankcard((BankCard) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case AtmPackage.RECEIPT__TIME:
+			setTime(TIME_EDEFAULT);
+			return;
+		case AtmPackage.RECEIPT__USER_ID:
+			setUserID(USER_ID_EDEFAULT);
+			return;
+		case AtmPackage.RECEIPT__CARD_ID:
+			setCardID(CARD_ID_EDEFAULT);
+			return;
+		case AtmPackage.RECEIPT__OPERATION_NAME:
+			setOperationName(OPERATION_NAME_EDEFAULT);
+			return;
+		case AtmPackage.RECEIPT__BALANCE_CHANGED:
+			setBalanceChanged(BALANCE_CHANGED_EDEFAULT);
+			return;
+		case AtmPackage.RECEIPT__BALANCE_REMAIN:
+			setBalanceRemain(BALANCE_REMAIN_EDEFAULT);
+			return;
+		case AtmPackage.RECEIPT__AT_MID:
+			setATMid(AT_MID_EDEFAULT);
+			return;
+		case AtmPackage.RECEIPT__BANK_NAME:
+			setBankName(BANK_NAME_EDEFAULT);
+			return;
+		case AtmPackage.RECEIPT__BANK:
+			setBank((Bank) null);
+			return;
+		case AtmPackage.RECEIPT__ATM:
+			setAtm((ATM) null);
+			return;
+		case AtmPackage.RECEIPT__BANKCARD:
+			setBankcard((BankCard) null);
+			return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case AtmPackage.RECEIPT__TIME:
+			return TIME_EDEFAULT == null ? time != null : !TIME_EDEFAULT.equals(time);
+		case AtmPackage.RECEIPT__USER_ID:
+			return USER_ID_EDEFAULT == null ? userID != null : !USER_ID_EDEFAULT.equals(userID);
+		case AtmPackage.RECEIPT__CARD_ID:
+			return CARD_ID_EDEFAULT == null ? cardID != null : !CARD_ID_EDEFAULT.equals(cardID);
+		case AtmPackage.RECEIPT__OPERATION_NAME:
+			return OPERATION_NAME_EDEFAULT == null ? operationName != null
+					: !OPERATION_NAME_EDEFAULT.equals(operationName);
+		case AtmPackage.RECEIPT__BALANCE_CHANGED:
+			return balanceChanged != BALANCE_CHANGED_EDEFAULT;
+		case AtmPackage.RECEIPT__BALANCE_REMAIN:
+			return balanceRemain != BALANCE_REMAIN_EDEFAULT;
+		case AtmPackage.RECEIPT__AT_MID:
+			return AT_MID_EDEFAULT == null ? atMid != null : !AT_MID_EDEFAULT.equals(atMid);
+		case AtmPackage.RECEIPT__BANK_NAME:
+			return BANK_NAME_EDEFAULT == null ? bankName != null : !BANK_NAME_EDEFAULT.equals(bankName);
+		case AtmPackage.RECEIPT__BANK:
+			return bank != null;
+		case AtmPackage.RECEIPT__ATM:
+			return atm != null;
+		case AtmPackage.RECEIPT__BANKCARD:
+			return bankcard != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (time: ");
+		result.append(time);
+		result.append(", userID: ");
+		result.append(userID);
+		result.append(", cardID: ");
+		result.append(cardID);
+		result.append(", operationName: ");
+		result.append(operationName);
+		result.append(", balanceChanged: ");
+		result.append(balanceChanged);
+		result.append(", balanceRemain: ");
+		result.append(balanceRemain);
+		result.append(", ATMid: ");
+		result.append(atMid);
+		result.append(", bankName: ");
+		result.append(bankName);
+		result.append(')');
+		return result.toString();
+	}
+
+} //ReceiptImpl

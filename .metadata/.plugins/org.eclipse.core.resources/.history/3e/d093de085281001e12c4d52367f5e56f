@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="atm" version="12.0.0.2017041100">
+  <ownedViewpoints name="users" modelFileExtension="atm">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Users diagram" domainClass="atm::Bank" enablePopupBars="true">
+      <metamodel href="../../org.rm2pt.sample.atm.metamodel/model/atm.ecore#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="ATMNode" domainClass="atm::ATM">
+          <style xsi:type="style:WorkspaceImageDescription" hideLabelByDefault="true" sizeComputationExpression="4" resizeKind="NSEW" workspacePath="/org.rm2pt.sample.atm.design/icons/atm.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="CustomerNode" domainClass="atm::Customer">
+          <style xsi:type="style:WorkspaceImageDescription" hideLabelByDefault="true" sizeComputationExpression="4" resizeKind="NSEW" workspacePath="/org.rm2pt.sample.atm.design/icons/Customer.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="BankClerkNode" domainClass="atm::BankClerk">
+          <style xsi:type="style:WorkspaceImageDescription" hideLabelByDefault="true" sizeComputationExpression="4" resizeKind="NSEW" workspacePath="/org.rm2pt.sample.atm.design/icons/BankClerk.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="BankNode" domainClass="atm::Bank">
+          <style xsi:type="style:WorkspaceImageDescription" hideLabelByDefault="true" sizeComputationExpression="4" resizeKind="NSEW" workspacePath="/org.rm2pt.sample.atm.design/icons/bank.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="BankCardNode" domainClass="atm::BankCard">
+          <style xsi:type="style:WorkspaceImageDescription" labelExpression="feature:bankName" hideLabelByDefault="true" sizeComputationExpression="4" resizeKind="NSEW" workspacePath="/org.rm2pt.sample.atm.design/icons/BankCard.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ReceiptNode" domainClass="atm::Receipt">
+          <style xsi:type="style:WorkspaceImageDescription" hideLabelByDefault="true" sizeComputationExpression="4" resizeKind="NSEW" workspacePath="/org.rm2pt.sample.atm.design/icons/receipt.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="user2atmEdge" sourceMapping="//@ownedViewpoints[name='users']/@ownedRepresentations[name='Users%20diagram']/@defaultLayer/@nodeMappings[name='BankClerkNode'] //@ownedViewpoints[name='users']/@ownedRepresentations[name='Users%20diagram']/@defaultLayer/@nodeMappings[name='CustomerNode']" targetMapping="//@ownedViewpoints[name='users']/@ownedRepresentations[name='Users%20diagram']/@defaultLayer/@nodeMappings[name='ATMNode']" targetFinderExpression="feature:atmuser">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="atm2bankEdge" sourceMapping="//@ownedViewpoints[name='users']/@ownedRepresentations[name='Users%20diagram']/@defaultLayer/@nodeMappings[name='ATMNode']" targetMapping="//@ownedViewpoints[name='users']/@ownedRepresentations[name='Users%20diagram']/@defaultLayer/@nodeMappings[name='BankNode']" targetFinderExpression="feature:atmFrom">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="receipt2bankEdge" sourceMapping="//@ownedViewpoints[name='users']/@ownedRepresentations[name='Users%20diagram']/@defaultLayer/@nodeMappings[name='ReceiptNode']" targetMapping="//@ownedViewpoints[name='users']/@ownedRepresentations[name='Users%20diagram']/@defaultLayer/@nodeMappings[name='BankNode']" targetFinderExpression="feature:bank">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="receipt2atmEdge" sourceMapping="//@ownedViewpoints[name='users']/@ownedRepresentations[name='Users%20diagram']/@defaultLayer/@nodeMappings[name='ReceiptNode']" targetMapping="//@ownedViewpoints[name='users']/@ownedRepresentations[name='Users%20diagram']/@defaultLayer/@nodeMappings[name='ATMNode']" targetFinderExpression="feature:atm">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="receipt2bankcardEdge" sourceMapping="//@ownedViewpoints[name='users']/@ownedRepresentations[name='Users%20diagram']/@defaultLayer/@nodeMappings[name='ReceiptNode']" targetMapping="//@ownedViewpoints[name='users']/@ownedRepresentations[name='Users%20diagram']/@defaultLayer/@nodeMappings[name='BankCardNode']" targetFinderExpression="feature:bankcard">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="card2bankEdge" sourceMapping="//@ownedViewpoints[name='users']/@ownedRepresentations[name='Users%20diagram']/@defaultLayer/@nodeMappings[name='BankCardNode']" targetMapping="//@ownedViewpoints[name='users']/@ownedRepresentations[name='Users%20diagram']/@defaultLayer/@nodeMappings[name='BankNode']" targetFinderExpression="feature:card2bank">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="org.rm2pt.sample.atm.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atm:Bank xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:atm="http://www.rm2pt.com/atm" bankName="ABC">
+  <atmFrom atmID="001">
+    <ATMuser xsi:type="atm:BankClerk" name="A"/>
+    <ATMuser xsi:type="atm:Customer" name="B">
+      <bankcardOf/>
+      <receiptOf/>
+    </ATMuser>
+  </atmFrom>
+</atm:Bank>

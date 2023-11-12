@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="org.rm2pt.sample.atm.feature">
+      <category name="org.rm2pt.sample.atm.category"/>
+   </feature>
+   <category-def name="org.rm2pt.sample.atm.category" label="org rm2pt sample atm category"/>
+</site>

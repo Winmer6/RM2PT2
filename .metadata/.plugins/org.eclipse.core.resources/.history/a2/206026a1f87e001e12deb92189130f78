@@ -1,0 +1,49 @@
+/**
+ */
+package org.rm2pt.sample.atm.metamodel.atm;
+
+import org.eclipse.emf.common.util.EList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Customer</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.Customer#getReceiptTo <em>Receipt To</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.Customer#getBankcardOf <em>Bankcard Of</em>}</li>
+ * </ul>
+ *
+ * @see org.rm2pt.sample.atm.metamodel.atm.AtmPackage#getCustomer()
+ * @model
+ * @generated
+ */
+public interface Customer extends User {
+	/**
+	 * Returns the value of the '<em><b>Receipt To</b></em>' containment reference list.
+	 * The list contents are of type {@link org.rm2pt.sample.atm.metamodel.atm.Receipt}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Receipt To</em>' containment reference list.
+	 * @see org.rm2pt.sample.atm.metamodel.atm.AtmPackage#getCustomer_ReceiptTo()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Receipt> getReceiptTo();
+
+	/**
+	 * Returns the value of the '<em><b>Bankcard Of</b></em>' containment reference list.
+	 * The list contents are of type {@link org.rm2pt.sample.atm.metamodel.atm.BankCard}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Bankcard Of</em>' containment reference list.
+	 * @see org.rm2pt.sample.atm.metamodel.atm.AtmPackage#getCustomer_BankcardOf()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<BankCard> getBankcardOf();
+
+} // Customer

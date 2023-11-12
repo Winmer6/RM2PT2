@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.rm2pt.sample.atm.feature"
+      label="org.rm2pt.sample.atmFeature"
+      version="1.0.0.202311121240"
+      provider-name="RM2PT">
+
+   <description url="http://www.rm2pt.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.rm2pt.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.rm2pt.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="org.rm2pt.sample.atm.design"
+         download-size="443"
+         install-size="537"
+         version="1.0.0.202311121240"
+         unpack="false"/>
+
+   <plugin
+         id="org.rm2pt.sample.atm.metamodel"
+         download-size="47"
+         install-size="174"
+         version="1.0.0.202311121240"
+         unpack="false"/>
+
+   <plugin
+         id="org.rm2pt.sample.atm.metamodel.edit"
+         download-size="25"
+         install-size="54"
+         version="1.0.0.202311121240"
+         unpack="false"/>
+
+   <plugin
+         id="org.rm2pt.sample.atm.metamodel.editor"
+         download-size="65"
+         install-size="148"
+         version="1.0.0.202311121240"
+         unpack="false"/>
+
+   <plugin
+         id="org.rm2pt.sample.atm.dsl"
+         download-size="53"
+         install-size="135"
+         version="1.0.0.202311121240"
+         unpack="false"/>
+
+   <plugin
+         id="org.rm2pt.sample.atm.dsl.ide"
+         download-size="25"
+         install-size="64"
+         version="1.0.0.202311121240"
+         unpack="false"/>
+
+   <plugin
+         id="org.rm2pt.sample.atm.dsl.ui"
+         download-size="19"
+         install-size="90"
+         version="1.0.0.202311121240"
+         unpack="false"/>		
+</feature>
+

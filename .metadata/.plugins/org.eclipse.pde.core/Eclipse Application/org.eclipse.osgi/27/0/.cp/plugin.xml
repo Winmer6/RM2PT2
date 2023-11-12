@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension point="org.eclipse.ui.activities">
+      <!-- EMF MDD Tools -->
+      <activity
+            id="org.eclipse.emf.activity"
+            description="%activity.emf.desc"
+            name="%activity.emf">
+      </activity>
+      <!-- EMF Project and EMF Generator Model wizards and Reload action --> 
+      <activityPatternBinding
+            activityId="org.eclipse.emf.activity"
+            pattern="org\.eclipse\.emf\.codegen\.ecore\.ui/.*">
+      </activityPatternBinding>      
+      <!-- Model importers -->
+      <activityPatternBinding
+            activityId="org.eclipse.emf.activity"
+            pattern="org\.eclipse\.emf\.importer/.*">
+      </activityPatternBinding>
+      <!-- Model exporters -->
+      <activityPatternBinding
+            activityId="org.eclipse.emf.activity"
+            pattern="org\.eclipse\.emf\.exporter/.*">
+      </activityPatternBinding>
+      <!-- Ecore editor -->
+      <activityPatternBinding
+            activityId="org.eclipse.emf.activity"
+            pattern="org\.eclipse\.emf\.ecore\.editor/.*Ecore.*">
+      </activityPatternBinding>
+      <!-- Create Dynamic Instance action -->
+      <activityPatternBinding
+            activityId="org.eclipse.emf.activity"
+            pattern="org\.eclipse\.emf\.ecore\.editor/.*CreateDynamic.*">
+      </activityPatternBinding>
+      <!-- XML Schema to Ecore mapping -->
+      <activityPatternBinding
+            activityId="org.eclipse.emf.activity"
+            pattern="org\.eclipse\.emf\.mapping\.xsd2ecore\.editor/.*">
+      </activityPatternBinding>
+      <!-- Ecore to Ecore mapping -->
+      <activityPatternBinding
+            activityId="org.eclipse.emf.activity"
+            pattern="org\.eclipse\.emf\.mapping\.ecore2ecore\.editor/.*">
+      </activityPatternBinding>
+      <!-- Ecore to XML mapping -->
+      <activityPatternBinding
+            activityId="org.eclipse.emf.activity"
+            pattern="org\.eclipse\.emf\.mapping\.ecore2xml\.ui/.*">
+      </activityPatternBinding>
+      <!-- Validation -->
+      <activityPatternBinding
+            activityId="org.eclipse.emf.activity"
+            pattern="org\.eclipse\.emf\.validation\.ui/.*">
+      </activityPatternBinding>      
+
+      <!-- Reflective Editors -->
+      <activity
+            id="org.eclipse.emf.reflective.activity"
+            description="%activity.emf.reflective.desc"
+            name="%activity.emf.reflective">
+      </activity>
+      <activityPatternBinding
+            activityId="org.eclipse.emf.reflective.activity"
+            pattern="org\.eclipse\.emf\.ecore\.editor/.Open*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="org.eclipse.emf.reflective.activity"
+            pattern="org\.eclipse\.emf\.ecore\.editor/.*Reflective.*">
+      </activityPatternBinding>
+
+      <!-- EMF JET -->
+      <activity
+            id="org.eclipse.emf.jet.activity"
+            description="%activity.emf.jet.desc"
+            name="%activity.emf.jet">
+      </activity>
+      <activityPatternBinding
+            activityId="org.eclipse.emf.jet.activity"
+            pattern="org\.eclipse\.emf\.codegen\.ui/.*">
+      </activityPatternBinding>
+
+      <!-- Sample XML Schema Editor -->
+      <activity
+            id="org.eclipse.xsd.activity"
+            description="%activity.xsd.desc"
+            name="%activity.xsd">
+      </activity>
+      <activityPatternBinding
+            activityId="org.eclipse.xsd.activity"
+            pattern="org\.eclipse\.xsd\.editor/.*">
+      </activityPatternBinding>
+
+      <!-- EMF Examples -->
+      <activity
+            id="org.eclipse.emf.examples.activity"
+            description="%activity.emf.examples.desc"
+            name="%activity.emf.examples">
+      </activity>
+      <activityPatternBinding
+            activityId="org.eclipse.emf.examples.activity"
+            pattern="org\.eclipse\.emf\.example\.installer/.*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="org.eclipse.emf.examples.activity"
+            pattern="org\.eclipse\.xsd\.example\.installer/.*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="org.eclipse.emf.examples.activity"
+            pattern="org\.eclipse\.emf\.examples\.library\.editor/.*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="org.eclipse.emf.examples.activity"
+            pattern="org\.eclipse\.emf\.query\.examples/.*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="org.eclipse.emf.examples.activity"
+            pattern="org\.eclipse\.emf\.transaction\.examples/.*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="org.eclipse.emf.examples.activity"
+            pattern="org\.eclipse\.emf\.validation\.examples/.*">
+      </activityPatternBinding>
+
+      <!-- The category should be something that makes sense for the product -->
+      <category
+            description="%activity.cat.emf.desc"
+            id="org.eclipse.emf.Category"
+            name="%activity.cat.emf">
+      </category>
+
+      <categoryActivityBinding
+            activityId="org.eclipse.emf.activity"
+            categoryId="org.eclipse.emf.Category">
+      </categoryActivityBinding>
+      <categoryActivityBinding
+            activityId="org.eclipse.emf.reflective.activity"
+            categoryId="org.eclipse.emf.Category">
+      </categoryActivityBinding>
+      <categoryActivityBinding
+            activityId="org.eclipse.emf.jet.activity"
+            categoryId="org.eclipse.emf.Category">
+      </categoryActivityBinding>
+      <categoryActivityBinding
+            activityId="org.eclipse.xsd.activity"
+            categoryId="org.eclipse.emf.Category">
+      </categoryActivityBinding>
+      <categoryActivityBinding
+            activityId="org.eclipse.emf.examples.activity"
+            categoryId="org.eclipse.emf.Category">
+      </categoryActivityBinding>
+    
+    
+     <!-- Viewpoint Specification -->
+      <activity
+            id="org.eclipse.sirius.specification.activity"
+            description="Viewpoint specification"
+            name="viewpointspecification">
+      </activity>
+      <activityPatternBinding
+            activityId="org.eclipse.sirius.specification.activity"
+            pattern=".*/org.eclipse.sirius.ui.specificationproject.wizard">
+      </activityPatternBinding>
+    
+     <categoryActivityBinding
+            activityId="org.eclipse.sirius.specification.activity"
+            categoryId="org.eclipse.emf.Category">
+      </categoryActivityBinding>
+   </extension>
+    
+    
+   <extension point="org.eclipse.core.runtime.products" id="product">
+    <product name="RM2PT" application="org.eclipse.ui.ide.workbench">
+      <property name="appName" value="RM2PT"/>
+      <property name="startupForegroundColor" value="F9FCFF"/>
+      <property name="startupMessageRect" value="7,265,320,20"/>
+      <property name="startupProgressRect" value="2,290,448,10"/>
+      <property
+            name="cssTheme"
+            value="org.eclipse.e4.ui.css.theme.e4_default">
+      </property>
+      <property
+            name="welcomePage"
+            value="intro/product_welcome_intro.xml">
+      </property>
+      <property
+            name="aboutImage"
+            value="about.png">
+      </property>
+            <property
+            name="aboutText"
+            value="M2PT is a CASE tool for automatically prototype generation from a requirements model in UML diagrams complemented by formal contracts of system operations. Compared with other tools, our approach does not require design models but rely on a requirements model, which contains: 1) A use case diagram, 2) System sequence diagrams, 3) Contracts of system operations, 4) A conceptual class diagram. The evaluation result from four case studies shows that our approach can correctly generate 93.65% code from requirements models, the remaining non-executable 6.35% requirements can be recognized and wrapped as an interface, which can be manually implemented or matched with third-party APIs libraries.">
+      </property>
+      <property
+            name="preferenceCustomization"
+            value="plugin_customization.ini">
+      </property>
+    </product>
+  </extension>
+   <extension
+         point="org.eclipse.ui.intro">
+      <intro
+            class="org.eclipse.ui.intro.config.CustomizableIntroPart"
+            id="net.mydreamy.requirementmodel.branding.intro">
+      </intro>
+      <introProductBinding
+            introId="net.mydreamy.requirementmodel.branding.intro"
+            productId="net.mydreamy.requirementmodel.branding.product">
+      </introProductBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro.config">
+      <config
+            content="intro/product_welcome_intro.xml"
+            id="net.mydreamy.requirementmodel.branding.introConfigId"
+            introId="net.mydreamy.requirementmodel.branding.intro">
+         <presentation
+               home-page-id="root">
+            <implementation
+                  kind="html"
+                  os="win32,linux,macosx"
+                  style="content/shared.css">
+            </implementation>
+         </presentation>
+      </config>
+   </extension>
+    
+    
+</plugin>

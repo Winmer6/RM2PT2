@@ -1,0 +1,97 @@
+/**
+ */
+package org.rm2pt.sample.atm.metamodel.atm;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>ATM</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.ATM#getATMid <em>AT Mid</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.ATM#getAddress <em>Address</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.ATM#getATMuser <em>AT Muser</em>}</li>
+ *   <li>{@link org.rm2pt.sample.atm.metamodel.atm.ATM#getReceiptFrom <em>Receipt From</em>}</li>
+ * </ul>
+ *
+ * @see org.rm2pt.sample.atm.metamodel.atm.AtmPackage#getATM()
+ * @model
+ * @generated
+ */
+public interface ATM extends EObject {
+	/**
+	 * Returns the value of the '<em><b>AT Mid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>AT Mid</em>' attribute.
+	 * @see #setATMid(String)
+	 * @see org.rm2pt.sample.atm.metamodel.atm.AtmPackage#getATM_ATMid()
+	 * @model
+	 * @generated
+	 */
+	String getATMid();
+
+	/**
+	 * Sets the value of the '{@link org.rm2pt.sample.atm.metamodel.atm.ATM#getATMid <em>AT Mid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>AT Mid</em>' attribute.
+	 * @see #getATMid()
+	 * @generated
+	 */
+	void setATMid(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Address</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Address</em>' attribute.
+	 * @see #setAddress(String)
+	 * @see org.rm2pt.sample.atm.metamodel.atm.AtmPackage#getATM_Address()
+	 * @model
+	 * @generated
+	 */
+	String getAddress();
+
+	/**
+	 * Sets the value of the '{@link org.rm2pt.sample.atm.metamodel.atm.ATM#getAddress <em>Address</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Address</em>' attribute.
+	 * @see #getAddress()
+	 * @generated
+	 */
+	void setAddress(String value);
+
+	/**
+	 * Returns the value of the '<em><b>AT Muser</b></em>' containment reference list.
+	 * The list contents are of type {@link org.rm2pt.sample.atm.metamodel.atm.User}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>AT Muser</em>' containment reference list.
+	 * @see org.rm2pt.sample.atm.metamodel.atm.AtmPackage#getATM_ATMuser()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<User> getATMuser();
+
+	/**
+	 * Returns the value of the '<em><b>Receipt From</b></em>' reference list.
+	 * The list contents are of type {@link org.rm2pt.sample.atm.metamodel.atm.Receipt}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Receipt From</em>' reference list.
+	 * @see org.rm2pt.sample.atm.metamodel.atm.AtmPackage#getATM_ReceiptFrom()
+	 * @model
+	 * @generated
+	 */
+	EList<Receipt> getReceiptFrom();
+
+} // ATM

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;org.rm2pt.sample.atm.design/icons/atm.jpg&apos; to &apos;atm.svg&apos;" description="Rename resource &apos;atm.jpg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="icons/atm.jpg" name="atm.svg" stamp="1699783626873" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;org.rm2pt.sample.atm.design/icons/atm.svg&apos; to &apos;atm.jpg&apos;" description="Rename resource &apos;atm.svg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="icons/atm.svg" name="atm.jpg" stamp="1699784048681" updateReferences="true"/>
+</session>

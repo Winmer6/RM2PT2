@@ -1,0 +1,31 @@
+UseCaseModel ATM {
+
+	UC::withdrawCash definedBySSD(Usecase1SSD) relatedService(Usecase1Service)
+	UC::checkBalance
+	UC::depositFunds
+	UC::changePassword
+
+	Actor Customer {
+		withdrawCash
+		checkBalance
+		depositFunds
+	}
+
+	Actor Actor2 {
+	}
+
+	Interaction Usecase1SSD {
+
+		[Participants: Usecase1Service]
+
+	}
+
+	Service ATMSystem {} Service ThirdPartyServices {}
+
+	Service Usecase1Service {
+
+	}
+
+}
+DomainModel ATM {}
+

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.5.0
+Build-Jdk-Spec: 11
+Bundle-ManifestVersion: 2
+Bundle-Name: RMCode Branding
+Bundle-SymbolicName: net.mydreamy.requirementmodel.branding;singleton:=t
+ rue
+Bundle-Version: 1.2.3.202202161722
+Bundle-Vendor: MCloud
+Require-Bundle: org.eclipse.ui.intro.universal,org.eclipse.ui,org.eclips
+ e.ui.intro
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-ActivationPolicy: lazy
+

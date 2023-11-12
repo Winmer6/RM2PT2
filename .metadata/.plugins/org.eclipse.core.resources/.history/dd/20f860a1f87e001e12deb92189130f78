@@ -1,0 +1,60 @@
+#
+
+pluginName = org.rm2pt.sample.atm.metamodel Edit Support
+providerName = www.example.org
+
+_UI_CreateChild_text = {0}
+_UI_CreateChild_text2 = {1} {0}
+_UI_CreateChild_text3 = {1}
+_UI_CreateChild_tooltip = Create New {0} Under {1} Feature
+_UI_CreateChild_description = Create a new child of type {0} for the {1} feature of the selected {2}.
+_UI_CreateSibling_description = Create a new sibling of type {0} for the selected {2}, under the {1} feature of their parent.
+
+_UI_PropertyDescriptor_description = The {0} of the {1}
+
+_UI_ATM_type = ATM
+_UI_User_type = User
+_UI_BankClerk_type = Bank Clerk
+_UI_Customer_type = Customer
+_UI_BankCard_type = Bank Card
+_UI_Bank_type = Bank
+_UI_Receipt_type = Receipt
+_UI_Unknown_type = Object
+
+_UI_Unknown_datatype= Value
+
+_UI_ATM_ATMid_feature = AT Mid
+_UI_ATM_address_feature = Address
+_UI_ATM_ATMuser_feature = AT Muser
+_UI_ATM_receiptFrom_feature = Receipt From
+_UI_User_name_feature = Name
+_UI_User_address_feature = Address
+_UI_User_userID_feature = User ID
+_UI_User_age_feature = Age
+_UI_User_phone_feature = Phone
+_UI_BankClerk_Post_feature = Post
+_UI_BankClerk_pin_feature = Pin
+_UI_Customer_receiptTo_feature = Receipt To
+_UI_Customer_bankcardOf_feature = Bankcard Of
+_UI_BankCard_password_feature = Password
+_UI_BankCard_cardID_feature = Card ID
+_UI_BankCard_balance_feature = Balance
+_UI_BankCard_catalog_feature = Catalog
+_UI_BankCard_receiptOf_feature = Receipt Of
+_UI_Bank_atmFrom_feature = Atm From
+_UI_Bank_bankName_feature = Bank Name
+_UI_Bank_address_feature = Address
+_UI_Bank_BankUser_feature = Bank User
+_UI_Bank_receiptAt_feature = Receipt At
+_UI_Receipt_time_feature = Time
+_UI_Receipt_userID_feature = User ID
+_UI_Receipt_cardID_feature = Card ID
+_UI_Receipt_operationName_feature = Operation Name
+_UI_Receipt_balanceChanged_feature = Balance Changed
+_UI_Receipt_balanceRemain_feature = Balance Remain
+_UI_Receipt_ATMid_feature = AT Mid
+_UI_Receipt_bankName_feature = Bank Name
+_UI_Unknown_feature = Unspecified
+
+_UI_CardCatalog_CREDIT_literal = CREDIT
+_UI_CardCatalog_DEBIT_literal = DEBIT

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated atm -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.rm2pt.sample.atm.metamodel.atm.presentation.AtmModelWizardID"
+            name="%_UI_AtmModelWizard_label"
+            class="org.rm2pt.sample.atm.metamodel.atm.presentation.AtmModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AtmModelFile.gif">
+         <description>%_UI_AtmModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated atm -->
+      <editor
+            id="org.rm2pt.sample.atm.metamodel.atm.presentation.AtmEditorID"
+            name="%_UI_AtmEditor_label"
+            icon="icons/full/obj16/AtmModelFile.gif"
+            extensions="atm"
+            class="org.rm2pt.sample.atm.metamodel.atm.presentation.AtmEditor"
+            contributorClass="org.rm2pt.sample.atm.metamodel.atm.presentation.AtmActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
